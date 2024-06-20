@@ -1,0 +1,23 @@
+.contenedor_formLogin{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formLogin{
+    width: 50%;
+}
+
+.boton_inicio{
+    background-color: var(--colorPrimario);
+    border: var(--colorPrimario);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.boton_inicio:hover{
+    background-color: var(--hoverBoton);
+    transition: all .4s ease-in-out;
+}

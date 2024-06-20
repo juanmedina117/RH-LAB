@@ -1,0 +1,27 @@
+<div class="menu">
+
+    <div class="usuario_data">
+
+        <div class="usuario_img">
+
+            <img class="img-fluid rounded" src="assets/img/user.svg" alt="">
+
+        </div>
+
+        <div class="usuario_info">
+
+            <span> {{ "Juan Lule" }} </span>
+
+            <span> Admin </span>
+
+        </div>
+
+    </div>
+
+    <ul class="menuList list-group list-group-flush">
+        <li *ngFor="let item of menuLateral()" class="list-group-item">
+            {{ item }}
+        </li>
+    </ul>
+    
+</div>
