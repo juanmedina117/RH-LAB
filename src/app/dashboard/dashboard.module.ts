@@ -10,6 +10,9 @@ import { VacacionesComponent } from './components/vacaciones/vacaciones.componen
 import { IncapacidadesComponent } from './components/incapacidades/incapacidades.component';
 import { HorariosComponent } from './components/horarios/horarios.component';
 import { ReportesComponent } from './components/reportes/reportes.component';
+import { RouterModule } from '@angular/router';
+import { PrimeModule } from '../prime/prime.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -26,7 +29,10 @@ import { ReportesComponent } from './components/reportes/reportes.component';
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    SharedModule
-  ]
+    SharedModule,
+    RouterModule,
+    PrimeModule,
+    FormsModule
+    ]
 })
 export class DashboardModule { }

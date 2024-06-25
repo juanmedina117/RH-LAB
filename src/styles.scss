@@ -1,15 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+
 :root{
     --colorPrimario: #621132;
-    --colorSecundario:#EEEEEE;
+    --colorSecundario: #70002d;
+    --colorBordes:#EEEEEE;
     --hoverBoton: #ab1450;
+    --colorPantalla:#EEEEEE
 
 }
 
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 700
 body {
-    background-color: var(--colorSecundario);
+    background-color:var(--colorPantalla);
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;

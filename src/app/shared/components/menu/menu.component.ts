@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, computed } from '@angular/core';
+import { MenuListInterface } from '../../../interfaces/menu.interface';
 
 @Component({
   selector: 'app-menu',
@@ -7,7 +8,7 @@ import { Component, Input, OnInit, computed } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  @Input()menu?:string[];
+  @Input()menu?:MenuListInterface[];
 
   public menuLateral = computed( () => this.menu );
 

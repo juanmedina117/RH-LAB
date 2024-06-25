@@ -19,8 +19,12 @@
     </div>
 
     <ul class="menuList list-group list-group-flush">
-        <li *ngFor="let item of menuLateral()" class="list-group-item">
-            {{ item }}
+        <li 
+        *ngFor="let item of menuLateral()" 
+        [routerLink]="item.ruta"
+        routerLinkActive="active"
+        class="list-group-item">
+            {{ item.nombre }}
         </li>
     </ul>
     
