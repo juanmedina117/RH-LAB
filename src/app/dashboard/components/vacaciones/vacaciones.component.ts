@@ -19,8 +19,8 @@ export class VacacionesComponent implements OnInit {
 
     this.primengConfig.setTranslation({
       dayNames: ['Lunes', 'Martes','Miercolees','Jueves','Viernees','Sabado','Domingo'],
-      dayNamesShort: ['Lu', 'Mar', 'Mi','Ju','Vi','Sa','Do'],
-      dayNamesMin:['L', 'M', 'Mi','J','V','S','D'],
+      dayNamesShort: ['Lu', 'Ma', 'Mi','Ju','Vi','Sa','Do'],
+      dayNamesMin:['L', 'M', 'M','J','V','S','D'],
       monthNames:['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
       monthNamesShort:['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'],
       today:'Hoy'

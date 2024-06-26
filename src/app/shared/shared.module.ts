@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { RouterModule } from '@angular/router';
+import { CalendarioComponent } from './components/calendario/calendario.component';
 
 
 
@@ -11,7 +12,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     HeaderComponent,
     FooterComponent,
-    MenuComponent
+    MenuComponent,
+    CalendarioComponent
   ],
   imports: [
     CommonModule,
