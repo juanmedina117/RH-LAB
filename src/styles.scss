@@ -33,3 +33,10 @@ body {
   box-shadow: var(--colorPrimario) !important;
   box-shadow: #ab1450;
 }
+
+
+.p-datepicker table td > span.p-highlight {
+    color: var(--colorPrimario);
+    background: yellow;
+    font-weight: bold;
+}
