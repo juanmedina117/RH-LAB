@@ -6,49 +6,28 @@
     gap: 20px;
 }
 
-.vacaciones_calendario {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contenedor_colores_status {
-    width: 85%;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-}
-
-.colores {
-    display: flex;
-    column-gap: 10px;
-    align-items: center;
-
-    span{
-        text-transform: capitalize;
-    }
-
-    .color_rojo {
-        width: 15px;
-        height: 15px;
-        background-color: red;
-    }
-
-    .color_amarillo {
-        width: 15px;
-        height: 15px;
-        background-color: yellow;
-    }
-
-    .color_verde {
-        width: 15px;
-        height: 15px;
-        background-color: green;
-    }
+.desactivado{
+  cursor: not-allowed!important ;
 }
 
 input:disabled {
     background-color: white;
+}
+
+
+button:disabled {
+  cursor: no-drop;
+}
+
+
+.boton_solicitud{
+    width: 100%;
+    background-color: var(--colorPrimario);
+    color: var(--colorBlanco);
+    font-weight: bold;
+}
+
+.boton_solicitud:hover{
+    background-color: var(--colorSecundario);
+    transition: all 2s ease-in-out;
 }

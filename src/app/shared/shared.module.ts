@@ -5,7 +5,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { RouterModule } from '@angular/router';
 import { CalendarioComponent } from './components/calendario/calendario.component';
-
+import { PrimeModule } from '../prime/prime.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,12 +18,15 @@ import { CalendarioComponent } from './components/calendario/calendario.componen
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    PrimeModule,
+    FormsModule
   ],
   exports:[
     HeaderComponent,
     FooterComponent,
-    MenuComponent
+    MenuComponent,
+    CalendarioComponent
   ]
 })
 export class SharedModule { }

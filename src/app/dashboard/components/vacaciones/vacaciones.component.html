@@ -1,118 +1,96 @@
 <div class="row">
 
     <div class="contenedor_vacaciones">
-        
+
         <div class="vacaciones_datos">
 
             <div class="contenedor__encargado">
-                
+
 
                 <div class="mb-3 mt-5">
-                    
-                    <label 
-                        for="aprobador" 
+
+                    <label
+                        for="aprobador"
                         class="form-label">Nombre de aprobador
                     </label>
 
-                    <input 
-                        class="form-control" 
+                    <input
+                        class="form-control"
                         id="aprobador"
-                        type="email" 
+                        type="email"
                         disabled
                         value="Marco Dominguez"
                     />
                 </div>
 
                 <div class="mb-3 mt-4">
-                    
-                    <label 
-                        for="solicitante" 
+
+                    <label
+                        for="solicitante"
                         class="form-label">Nombre del solictante
                     </label>
 
-                    <input 
-                        class="form-control" 
+                    <input
+                        class="form-control"
                         id="solicitante"
-                        type="email" 
+                        type="email"
                         disabled
                         value="Juan Manul Lule medina"
                     />
                 </div>
 
                 <div class="mt-4">
-                    
-                    <label 
-                        for="diasRestantes" 
+
+                    <label
+                        for="diasRestantes"
                         class="form-label">Dias restantes
                     </label>
 
-                    <input 
-                        class="form-control" 
+                    <input
+                        class="form-control"
                         id="diasRestantes"
-                        type="number" 
+                        type="number"
                         disabled
                         value=12
                     />
                 </div>
 
                 <div class="mt-4">
-                    
-                    <label 
-                        for="diasAutorizados" 
+
+                    <label
+                        for="diasAutorizados"
                         class="form-label">Dias autorizados
                     </label>
 
-                    <input 
-                        class="form-control" 
+                    <input
+                        class="form-control"
                         id="diasAutorizados"
-                        type="number" 
+                        type="number"
                         disabled
                         value=2
                     />
                 </div>
-              
+
+                <div class="mb-3 mt-4">
+
+                    <button
+
+                        class="boton_solicitud btn"
+                        [ngClass]="{'desactivar': activarBoton().activo }"
+                        [disabled]="!activarBoton().activo"
+                        >
+                        <span>Solicitar Vacaciones</span>
+                    </button>
+
+                </div>
+
 
             </div>
 
         </div>
-        
-        <div class="vacaciones_calendario">
-            
-            <p-calendar 
-                [locale]="es"
-                class="max-w-full" 
-                [(ngModel)]="date" 
-                [inline]="true" 
-            />
 
-            
 
-         <div class="contenedor_colores_status">
-
-            <div class="colores">
-
-                <div class="color_rojo"></div>
-                <span> Denegado</span>
-                
-            </div>
-
-            <div class="colores">
-
-                <div class="color_amarillo"></div>
-                <span>En espera</span>
-                
-            </div>
-
-            <div class="colores">
-
-                <div class="color_verde"></div>
-                <span>aprobado</span>
-                
-            </div>
-            
-        </div>
-
-        </div>
+        <app-calendario motivo="vac" (activo)="cambioValorBoton($event)" ></app-calendario>
 
 
     </div>

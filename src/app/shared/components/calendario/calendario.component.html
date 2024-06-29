@@ -1,1 +1,39 @@
-<p>calendario works!</p>
+<div class="vacaciones_calendario mt-5">
+
+    <p-calendar
+    (click)="capturaFechas()"
+        class="max-w-full"
+        [(ngModel)]="dates"
+        selectionMode="multiple"
+        [locale]="es"
+        [inline]="true"
+        [minDate]="maxDate()"
+        [readonlyInput]="true"
+        />
+
+    <div class="contenedor_colores_status">
+
+        <div class="colores">
+
+            <div class="color_rojo"></div>
+            <span> Denegado</span>
+
+        </div>
+
+        <div class="colores">
+
+            <div class="color_amarillo"></div>
+            <span>En espera</span>
+
+        </div>
+
+        <div class="colores">
+
+            <div class="color_verde"></div>
+            <span>aprobado</span>
+
+        </div>
+
+    </div>
+
+</div>
